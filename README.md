@@ -2,6 +2,7 @@
 
 The co20 air sensor sold by conrad as co20 Luftqualitätssensor or by Velux as [Raumluftfühler](http://www.velux.de/produkte/lueftungsloesungen-belueftung/raumluftfuehler) features a chipset by AppliedSensor.
 It measures the general air quality.
+This package uses the USB HID abstraction layer to access the co20 stick. The co20 is automatically detected as HID device by OSX and Windows and can probably also be detected as HID device under Linux, tho I have not tried this yet.
 
 ## Requirements
 To build you need to have [HID API](http://www.signal11.us/oss/hidapi/) installed.
