@@ -1,6 +1,6 @@
 # Access function to read sensor values from the [co20](https://www.conrad.de/de/voltcraft-co-20-usb-luftqualitaetssensor-raumluftmessgeraet-usb-stick-zur-anzeige-der-luftqualitaet-auswerte-software-101316.html) air sensor
 
-The co20 air sensor sold by conrad is produced by AppliedSensor.
+The co20 air sensor sold by conrad as co20 Luftqualitätssensor or by Velux as [Raumluftfühler](http://www.velux.de/produkte/lueftungsloesungen-belueftung/raumluftfuehler) features a chipset by AppliedSensor.
 It measures the general air quality.
 
 ## Requirements
