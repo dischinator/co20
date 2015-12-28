@@ -1,0 +1,16 @@
+all: air_csv
+
+PATH_HIDAPI=D:/hidapi
+COBJS=$(PATH_HIDAPI)/windows/hid.o co20_hid.o air_csv.o
+CFLAGS=-I$(PATH_HIDAPI)/hidapi -g -c
+LIBS= -lsetupapi
+
+air_csv: $(COBJS)
+	$(CC) -g $^ $(LIBS) -o air_csv
+
+$(COBJS): %.o: %.c
+	$(CC) $(CFLAGS) $< -o $@
+
+.PHONY: clean
+clean:
+	rm *.o air_csv.exe

@@ -1,0 +1,13 @@
+all: air_csv
+
+CFLAGS=-I/usr/local/include/hidapi
+
+co20.o: co20_hid.c
+	$(CC) $(CFLAGS) -Wall -c co20_hid.c
+
+air_csv: co20.o
+	$(CC) -Wall -o air_csv air_csv.c co20_hid.o -lhidapi
+
+.PHONY: clean
+clean:
+	rm air_csv *.o
